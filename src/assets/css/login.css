@@ -1,11 +1,6 @@
-:root {
-  --yellow-wars: #efb810;
-}
-
 .login {
   font-family: "Chivo Mono", monospace;
   color: var(--yellow-wars);
-  font-size: 3rem;
 }
 
 .login-page {

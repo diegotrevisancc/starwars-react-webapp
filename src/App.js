@@ -1,8 +1,14 @@
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import { useState } from "react";
 import Login from "./views/Login";
-import Menu from "./views/Menu";
-
+import Home from "./views/Home";
+import Films from "./views/Films";
+import Duvidas from "./views/Duvidas";
+import People from "./views/People";
+import Planets from "./views/Planets";
+import Sobre from "./views/Sobre";
+import Species from "./views/Species";
+import Starships from "./views/Starships";
 function App() {
   const [login, setLogin] = useState(false);
   const verificarLogin = () => {
@@ -14,8 +20,40 @@ function App() {
       element: <Login verificarLogin={verificarLogin} />,
     },
     {
-      path: "/menu",
-      element: login ? <Menu /> : <Login verificarLogin={verificarLogin} />,
+      path: "/HOME",
+      element: login ? <Home /> : <Login verificarLogin={verificarLogin} />,
+    },
+    {
+      path: "/FILMS",
+      element: login ? <Films /> : <Login verificarLogin={verificarLogin} />,
+    },
+    {
+      path: "/STARSHIPS",
+      element: login ? (
+        <Starships />
+      ) : (
+        <Login verificarLogin={verificarLogin} />
+      ),
+    },
+    {
+      path: "/PEOPLE",
+      element: login ? <People /> : <Login verificarLogin={verificarLogin} />,
+    },
+    {
+      path: "/PLANETS",
+      element: login ? <Planets /> : <Login verificarLogin={verificarLogin} />,
+    },
+    {
+      path: "/SPECIES",
+      element: login ? <Species /> : <Login verificarLogin={verificarLogin} />,
+    },
+    {
+      path: "/DUVIDAS",
+      element: login ? <Duvidas /> : <Login verificarLogin={verificarLogin} />,
+    },
+    {
+      path: "/SOBRE",
+      element: login ? <Sobre /> : <Login verificarLogin={verificarLogin} />,
     },
   ]);
   return <RouterProvider router={router} />;

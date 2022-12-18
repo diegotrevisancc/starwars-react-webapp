@@ -1,0 +1,6 @@
+.cadastro {
+  padding: 20px 0;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+}

@@ -19,7 +19,7 @@ const Login = (props) => {
       await loginService(email, password);
       sessionStorage.setItem("login", true);
       props.verificarLogin();
-      navigate("/menu");
+      navigate("/HOME");
     } catch (error) {
       alert("error");
     }
