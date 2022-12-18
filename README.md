@@ -2,7 +2,7 @@
 
 ## `RA`: 1131769
 
-## `Email Padrão`: chewbacca@gmail.com
+## `Email Padrão`: chewbacca@sw.com
 
 ## `Senha Padrão`: chewbacca
 
