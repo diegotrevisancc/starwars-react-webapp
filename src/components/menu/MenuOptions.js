@@ -4,6 +4,11 @@ const MenuOptions = () => {
   const navigate = useNavigate();
   const logoff = () => {
     sessionStorage.removeItem("login");
+    let contador = 1;
+    if (localStorage.getItem("acessos") >= 1) {
+      contador = parseInt(localStorage.getItem("acessos")) + 1;
+    }
+    localStorage.setItem("acessos", contador);
     navigate("/");
   };
   const toHome = () => {
@@ -63,7 +68,7 @@ const MenuOptions = () => {
           SOBRE
         </div>
         <div className="item-menu" onClick={logoff}>
-          Logoff
+          LOGOFF
         </div>
       </div>
     </div>

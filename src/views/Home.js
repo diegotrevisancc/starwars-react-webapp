@@ -1,7 +1,5 @@
 import React, { useLayoutEffect, useState } from "react";
 import "../assets/css/menu.css";
-
-import Footer from "../components/menu/Footer";
 import MenuOptions from "../components/menu/MenuOptions";
 import { getDuvidas, deleteDuvidas } from "../services/DataBaseService";
 import Table from "@mui/material/Table";
@@ -14,7 +12,7 @@ import Paper from "@mui/material/Paper";
 import DeleteIcon from "@mui/icons-material/Delete";
 import { IconButton } from "@mui/material";
 import Header from "../components/menu/Header";
-
+import Acessos from "../Acesso";
 const Home = () => {
   const [duvidas, setDuvidas] = useState([]);
 
@@ -37,9 +35,10 @@ const Home = () => {
       alert(e);
     }
   };
+
   return (
     <div>
-      <Header page="HOME" />
+      <Header page="HOME" acessos={localStorage.getItem("acessos")} />
       <MenuOptions />
       <div className="container corpo">
         <TableContainer component={Paper}>
@@ -78,7 +77,7 @@ const Home = () => {
         </TableContainer>
       </div>
 
-      <Footer />
+      <script src={Acessos}></script>
     </div>
   );
 };

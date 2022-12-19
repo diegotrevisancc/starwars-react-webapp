@@ -5,7 +5,7 @@ import axios from "axios";
 import { useState, useLayoutEffect } from "react";
 import "../assets/css/starships.css";
 const Starships = () => {
-  const [dados, setDados] = useState([{ name: "Diego" }, { name: "Marcos" }]);
+  const [dados, setDados] = useState([]);
 
   useLayoutEffect(() => {
     axios
@@ -20,7 +20,7 @@ const Starships = () => {
 
   return (
     <div className="starship-page">
-      <DefaultPage page="FILMES" />
+      <DefaultPage page="STARSHIPS" />
       <div className="conteudo container">
         <div className="starships">
           {dados.map((item, key) => (
@@ -34,8 +34,6 @@ const Starships = () => {
           ))}
         </div>
       </div>
-
-      <Footer />
     </div>
   );
 };

@@ -1,3 +1,10 @@
+.films-page {
+  background: url("../images/stars.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
 .conteudo {
   background-color: unset;
 }
@@ -10,7 +17,6 @@
 }
 
 .filme {
-  background-color: whitesmoke;
   display: flex;
   flex-flow: column;
   border: 1px solid var(--yellow-wars);

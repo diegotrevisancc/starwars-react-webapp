@@ -9,6 +9,7 @@ import Planets from "./views/Planets";
 import Sobre from "./views/Sobre";
 import Species from "./views/Species";
 import Starships from "./views/Starships";
+import Footer from "./components/menu/Footer";
 function App() {
   const [login, setLogin] = useState(false);
   const verificarLogin = () => {
@@ -56,7 +57,12 @@ function App() {
       element: login ? <Sobre /> : <Login verificarLogin={verificarLogin} />,
     },
   ]);
-  return <RouterProvider router={router} />;
+  return (
+    <div>
+      <RouterProvider router={router} />
+      <Footer />
+    </div>
+  );
 }
 
 export default App;

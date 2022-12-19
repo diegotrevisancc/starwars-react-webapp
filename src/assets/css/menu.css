@@ -3,7 +3,7 @@
   box-sizing: border-box;
 }
 .cabecalho {
-  width: 100vw;
+  width: 100%;
   background-image: url("../images/wallpaper-header.jpg");
   background-size: cover;
   background-repeat: no-repeat;
@@ -88,6 +88,18 @@ footer {
     flex-flow: column;
   }
   .item-menu {
+    width: 100%;
+  }
+  .footer {
+    flex-flow: column;
+  }
+  .cabecalho {
+    text-align: center;
+  }
+  .container {
+    padding: 0 1vw;
+  }
+  .corpo {
     width: 100%;
   }
 }

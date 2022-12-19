@@ -5,7 +5,7 @@ import axios from "axios";
 import { useState, useLayoutEffect } from "react";
 import "../assets/css/filmes.css";
 const Films = () => {
-  const [dados, setDados] = useState([{ name: "Diego" }, { name: "Marcos" }]);
+  const [dados, setDados] = useState([]);
 
   useLayoutEffect(() => {
     axios
@@ -18,7 +18,7 @@ const Films = () => {
       });
   }, []);
   return (
-    <div>
+    <div className="films-page">
       <DefaultPage page="FILMES" />
       <div className="conteudo container">
         <div className="filmes">
@@ -34,8 +34,6 @@ const Films = () => {
           ))}
         </div>
       </div>
-
-      <Footer />
     </div>
   );
 };

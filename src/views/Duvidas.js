@@ -8,6 +8,7 @@ import { TextField, Button } from "@mui/material";
 import { useState, useLayoutEffect } from "react";
 import { salvaDuvidas } from "../services/DataBaseService";
 import { useNavigate } from "react-router-dom";
+
 const Duvidas = () => {
   const navigate = useNavigate();
   const [nome, setNome] = useState("");
@@ -35,7 +36,7 @@ const Duvidas = () => {
   };
 
   return (
-    <div>
+    <div className="duvidas">
       <Header page="DUVIDAS" />
       <MenuOptions />
       <div className="container corpo">
@@ -72,7 +73,6 @@ const Duvidas = () => {
           </Button>
         </div>
       </div>
-      <Footer />
     </div>
   );
 };

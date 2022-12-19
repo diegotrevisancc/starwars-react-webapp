@@ -1,0 +1,26 @@
+.planets-page {
+  background: url("../images/stars.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.planets-page .container {
+  padding: 0 1vw;
+}
+.planets {
+  color: var(--yellow-wars);
+  display: grid;
+  gap: 50px;
+  font-weight: bold;
+  font-family: "Chivo Mono", monospace;
+  grid-template-columns: repeat(3, 1fr);
+  text-align: center;
+}
+
+@media screen and (max-width: 730px) {
+  .planets {
+    display: flex;
+    flex-flow: column;
+  }
+}
