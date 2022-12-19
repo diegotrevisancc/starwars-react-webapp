@@ -1,14 +1,7 @@
 import { app } from "../services/FirebaseConnect";
 import { getDocs, getFirestore } from "firebase/firestore";
-import {
-  collection,
-  addDoc,
-  doc,
-  getDoc,
-  query,
-  deleteDoc,
-} from "firebase/firestore";
-import { async } from "@firebase/util";
+import { collection, addDoc, doc, query, deleteDoc } from "firebase/firestore";
+
 const db = getFirestore(app); //Inicia a conexão
 
 export function salvaDuvidas(dados) {

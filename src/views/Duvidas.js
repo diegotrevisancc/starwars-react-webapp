@@ -2,10 +2,9 @@ import React from "react";
 import "../assets/css/menu.css";
 import "../assets/css/cadastro-duvidas.css";
 import Header from "../components/menu/Header";
-import Footer from "../components/menu/Footer";
 import MenuOptions from "../components/menu/MenuOptions";
 import { TextField, Button } from "@mui/material";
-import { useState, useLayoutEffect } from "react";
+import { useState } from "react";
 import { salvaDuvidas } from "../services/DataBaseService";
 import { useNavigate } from "react-router-dom";
 

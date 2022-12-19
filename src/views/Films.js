@@ -1,6 +1,6 @@
 import React from "react";
 import DefaultPage from "../components/DefaultPage";
-import Footer from "../components/menu/Footer";
+
 import axios from "axios";
 import { useState, useLayoutEffect } from "react";
 import "../assets/css/filmes.css";
