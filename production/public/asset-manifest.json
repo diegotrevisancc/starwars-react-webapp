@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/static/css/main.204a4eb9.css",
+    "main.js": "/static/js/main.a584796f.js",
+    "static/media/wallpaper-header.jpg": "/static/media/wallpaper-header.1501facc3ff02e68790c.jpg",
+    "static/media/starships.jpg": "/static/media/starships.da02e025f5eb3882e1a7.jpg",
+    "static/media/wallpaper-login.jpg": "/static/media/wallpaper-login.772657743e038beaf619.jpg",
+    "static/media/diego.png": "/static/media/diego.fd914e75720d6268c610.png",
+    "static/media/stars.jpg": "/static/media/stars.2c845e27c8e70f93ac21.jpg",
+    "index.html": "/index.html",
+    "main.204a4eb9.css.map": "/static/css/main.204a4eb9.css.map",
+    "main.a584796f.js.map": "/static/js/main.a584796f.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.204a4eb9.css",
+    "static/js/main.a584796f.js"
+  ]
+}
