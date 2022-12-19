@@ -1,0 +1,32 @@
+.conteudo {
+  background-color: unset;
+}
+
+.filmes {
+  padding: 2vh 0;
+  display: flex;
+  flex-flow: column;
+  gap: 10px;
+}
+
+.filme {
+  background-color: whitesmoke;
+  display: flex;
+  flex-flow: column;
+  border: 1px solid var(--yellow-wars);
+  border-radius: 10px;
+  padding: 10px;
+  transition: 1.5s;
+  font-family: "Chivo Mono", monospace;
+}
+
+.filme:hover {
+  background-color: black;
+  color: var(--yellow-wars);
+}
+
+.filme h1,
+h2,
+h3 {
+  text-align: center;
+}

@@ -36,7 +36,7 @@ const Duvidas = () => {
 
   return (
     <div>
-      <Header />
+      <Header page="DUVIDAS" />
       <MenuOptions />
       <div className="container corpo">
         <div className="conteudo cadastro">

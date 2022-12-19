@@ -31,7 +31,6 @@ export function getDuvidas() {
 
       let resultados = [];
       querySnapshot.forEach((doc) => {
-        console.log(doc.id, "=>", doc.data());
         let objeto = {
           id: doc.id,
           ...doc.data(),

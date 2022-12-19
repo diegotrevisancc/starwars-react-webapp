@@ -1,0 +1,19 @@
+.starship-page {
+  background: url("../images/starships.jpg");
+}
+
+.starships {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  padding: 20px;
+}
+
+.starship {
+  text-align: center;
+  color: var(--yellow-wars);
+  font-family: "Chivo Mono", monospace;
+  border: 3px solid var(--yellow-wars);
+  border-radius: 10px;
+}

@@ -39,7 +39,7 @@ const Home = () => {
   };
   return (
     <div>
-      <Header />
+      <Header page="HOME" />
       <MenuOptions />
       <div className="container corpo">
         <TableContainer component={Paper}>
